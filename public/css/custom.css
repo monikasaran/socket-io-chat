@@ -31,3 +31,6 @@ ul li span {
  .error{
    color:#800000;
  }
+p{
+  margin: 0;
+}

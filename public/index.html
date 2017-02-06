@@ -24,30 +24,33 @@
 <!-- chat page  -->
 <div id="chatPage" class="container">
   <!-- Whiteboard -->
-    <div class="col-md-12">
+  <h2 style="font-family: cursive; text-align: center; text-decoration: underline">Welcome MARK</h2>
+    <div class="col-md-6">
         <div class="panel-body">
            <div id="contentWrap" >
-              <div id="chatWrap" style=" border-radius: 10px;
-                  background: #F0E0B0;min-height: 400;max-height: 400;overflow-y: scroll;">
+              <div id="chatWrap" style=" border-radius: 10px; border: 1px;
+                  background: #9fc1fc;min-height: 500;max-height: 500;overflow-y: scroll;">
                   <div id="chat"></div>
               </div>
            </div>
         </div>
-    </div>
-    <!-- Chat textarea  -->
-    <div class="col-md-11 col-md-push-1">
+        <!-- Chat textarea  -->
+      <div class="col-md-12">
         <form id="message-box">
           <div class="form-group">
-           <textarea required autofocus style="background-color:#ffffe6;" 
-              rows="2" cols="80" 
+           <textarea required autofocus
+              rows="2" cols="60" 
              id="message" placeholder="Write your message and press enter.."></textarea>
-             <code>@mona  Hello</code> to say Hello to mona privately
           </div>
        </form>
-     </div>
+      </div>
+    </div>
+    
     <!-- Currenty Online  -->
-    <div class="col-md-3 col-md-push-1">
-      <div class="well text-muted small"> Online Users
+    <div class="col-md-3">
+      <hr><code>@mona  Hello</code><br> to say Hello to mona privately<br>
+      <hr>
+      <div class="well text-muted small" style="min-height: 390; max-height: 390;"> Online Users
         <div class="text-success small lead ">
           <div  id="users"></div>
         </div>
