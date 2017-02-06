@@ -1,0 +1,65 @@
+<html>
+<head>
+  <title>Lets Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="/css/custom.css" rel="stylesheet">
+  <link rel="icon" href="/images/chat_logo.png" type="image/x-icon"/>
+</head>
+
+<body>
+ <!--  nickname page  -->
+ <div id="nickPage" class="" align="center">
+    <h3>Enter your name</h3>
+    <p id="nickError"></p>
+    <div class="form-group">
+        <form id="nickForm" >
+          <input id="nickname" type="text" autofocus required placeholder="Name" />
+          <input class="btn btn-success" type="submit" value="Submit"/>
+        </form>
+    </div>
+</div>
+
+<!-- chat page  -->
+<div id="chatPage" class="container">
+  <!-- Whiteboard -->
+    <div class="col-md-12">
+        <div class="panel-body">
+           <div id="contentWrap" >
+              <div id="chatWrap" style=" border-radius: 10px;
+                  background: #F0E0B0;min-height: 400;max-height: 400;overflow-y: scroll;">
+                  <div id="chat"></div>
+              </div>
+           </div>
+        </div>
+    </div>
+    <!-- Chat textarea  -->
+    <div class="col-md-11 col-md-push-1">
+        <form id="message-box">
+          <div class="form-group">
+           <textarea required autofocus style="background-color:#ffffe6;" 
+              rows="2" cols="80" 
+             id="message" placeholder="Write your message and press enter.."></textarea>
+             <code>@mona  Hello</code> to say Hello to mona privately
+          </div>
+       </form>
+     </div>
+    <!-- Currenty Online  -->
+    <div class="col-md-3 col-md-push-1">
+      <div class="well text-muted small"> Online Users
+        <div class="text-success small lead ">
+          <div  id="users"></div>
+        </div>
+      </div>
+    </div>
+
+</div> <!--div id="chatWindow" -->
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/chat.js"></script>
+
+</body>
+</html>
