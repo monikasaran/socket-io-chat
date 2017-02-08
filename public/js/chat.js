@@ -52,14 +52,14 @@ jQuery(function($){
            $('#chat').append("<p style='' align='right' class='msg'><b>"+data.nick+" : </b>"+data.msg+"&nbsp;&nbsp;</p>");
          }else{
            $('#chat').append("<p style='' align='left' class='msg'><b>&nbsp;&nbsp;&nbsp;"+data.nick+" : </b>"+data.msg+"</p>");
-           alert("You got a message from "+title.toUpperCase);
+           alert("You got a message");
          }
          scrollCorrect();
       });
 
       socket.on('whisper', function(data){
           $('#chat').append("<p align='left' class='whisper'><b>&nbsp;&nbsp;&nbsp;"+data.nick+" : </b>"+data.msg+"</p><br/>");
-          alert("You got a message from "+title.toUpperCase);
+          alert("You got a message");
        });
 
        socket.on('private', function(data){
